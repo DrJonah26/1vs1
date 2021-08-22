@@ -1,0 +1,8 @@
+name: FFa
+version: ${project.version}
+main: de.drjonah.ffa.Main
+api-version: 1.17
+commands:
+  duel:
+    aliases: ["d"]
+  accept:
