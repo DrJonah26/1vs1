@@ -6,3 +6,4 @@ commands:
   duel:
     aliases: ["d"]
   accept:
+  elo:

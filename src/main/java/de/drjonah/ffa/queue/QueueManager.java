@@ -81,7 +81,9 @@ public class QueueManager {
     }
 
     public void sendActionBar(Player p) {
-        p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§9Es wird ein §cMatch §9für dich gesucht.."));
+        if (isInQueue(p)) {
+            p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§7Es wird ein §cMatch §7für dich gesucht.."));
+        }
     }
 
 }

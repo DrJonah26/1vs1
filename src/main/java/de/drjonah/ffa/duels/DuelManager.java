@@ -1,7 +1,6 @@
 package de.drjonah.ffa.duels;
 
 import de.drjonah.ffa.Main;
-import de.drjonah.ffa.kiteditor.listener.KitListener;
 import de.drjonah.ffa.utils.Base64;
 import de.drjonah.ffa.utils.Config;
 import org.bukkit.entity.Player;
@@ -14,6 +13,8 @@ public class DuelManager {
 
         requester.closeInventory();
         empfänger.closeInventory();
+        requester.addScoreboardTag("inMatch");
+        empfänger.addScoreboardTag("inMatch");
 
         if (Config.getConfig().contains("kit." + requester.getUniqueId()) ||
                 Config.getConfig().contains("kit.armor" + requester.getUniqueId())) {
