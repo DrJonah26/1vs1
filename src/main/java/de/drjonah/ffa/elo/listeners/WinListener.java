@@ -48,7 +48,8 @@ public class WinListener implements Listener {
             //neuen Rang gebena
             switch (killerElo) {
                 case 100:
-                    Bukkit.broadcastMessage(Main.PREFIX() + "Der Spieler §6" + killer.getName() + "§7 ist nun in §cBronze§7!");
+                    Bukkit.broadcastMessage(Main.PREFIX() + "Der Spieler §6" + killer.getName() + "§7 ist nun in §9Silber§7!");
+                    rankManager.setSilver(killer);
             }
         }
     }
